@@ -60,7 +60,7 @@ input{
     background-color: black;
     position: absolute;
     z-index: 2;
-    animation: allez-retour-barre 2s linear infinite;
+    animation: allez-retour-barre 4s linear infinite;
 }
 
 @keyframes allez-retour-barre {
@@ -145,3 +145,4 @@ input{
 input:disabled {
   background-color: white;
 }
+
