@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif
+}
+
+html, body {
+    touch-action: manipulation;
+}
+
+body {
+    background: linear-gradient(#6180D3, #2A2A5B);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p {
+    font-size: 52pt;
+    color: white;
+    text-shadow: #2A2A5B 10px 10px 5px;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+input{
+    font-size: 52pt;
+    box-shadow: #2A2A5B 10px 10px 5px;
+    outline: 2px solid black;
+    color: black;
+    margin-bottom: 2%;
+    width: 80%;
+}
+
+#btn{
+    font-size: 52pt;
+    box-shadow: #2A2A5B 10px 10px 5px;
+    outline: 2px solid black;
+    color: black;
+    margin-bottom: 5%;
+    width: 80%;
+}
+
+.shot-timing-bar{
+    margin-bottom: 5%;
+    width: 80%;
+    height: 5em;
+    position: relative;
+}
+
+.barre{
+    width: 5px;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+    animation: allez-retour-barre 2s linear infinite;
+}
+
+@keyframes allez-retour-barre {
+    0%{
+        left: 0%;
+    }
+    50%{
+        left: 100%;
+    }
+    100%{
+        left: 0%;
+    }
+}
+
+.game-over{
+    animation: gardien-game-over 0.5s ease-in-out infinite;
+}
+
+@keyframes gardien-game-over {
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.5;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
+.check{
+    animation: gardien-check 0.8s ease-in-out infinite;
+}
+
+@keyframes gardien-check {
+    0%{
+        rotate: 0deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+}
+
+.shot-timing-bar-bg{
+    background: linear-gradient(90deg, red 45%, limegreen 45%, limegreen 55%, red 55%);
+    outline: 2px solid black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.boite-du-gardien{
+    width: 45%;
+    flex: 1;
+}
+
+.haut{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.bas{
+    flex: 1;
+}
+
+#img-fond{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: -2;
+    display: none;
+}
+
+.r {
+  color: yellow;
+}
+
+input:disabled {
+  background-color: white;
+}
