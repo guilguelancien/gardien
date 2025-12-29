@@ -6,9 +6,9 @@ var barre = document.getElementById("barre");
 var shotTimingBar = document.getElementById("shot-timing-bar");
 var input = document.getElementById("code");
 var btn = document.getElementById("btn");
-var alarme = new Audio('../assets/alarme.mp3');
-var check = new Audio('../assets/check.mp3');
-var win = new Audio('../assets/win.mp3');
+var alarme = new Audio('assets/alarme.mp3');
+var check = new Audio('assets/check.mp3');
+var win = new Audio('assets/win.mp3');
 
 function reveil_gardien() {
     input.style.display = "none";
